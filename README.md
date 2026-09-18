@@ -23,10 +23,13 @@ contain only this public download-page README.
 
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
-| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 | [Mac native installer Beta 1](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-macos-installer-beta1) |
+| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 | [Mac native installer Beta 1.0.1 — Audio Tools fix](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-macos-installer-beta1.0.1) |
 | Windows x64 | 6.1.1 | [Windows compiled Beta 1.2](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-windows-beta1.2-compiled) |
 
 The Mac installer detects the installed version and selects a reviewed profile.
+Use Beta 1.0.1 or newer: the original native Beta 1 has an Audio Tools entry-point
+packaging bug. The corrected installer includes a public three-line launcher;
+analysis and patching implementations remain compiled.
 Unknown future versions are not supported automatically. Read the release-specific
 testing limitations before installing. The Mac beta is ad-hoc signed, not
 Developer ID signed or notarized.
