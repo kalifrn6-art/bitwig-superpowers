@@ -54,7 +54,7 @@ license UI. No inbound firewall rule is required.
 
 If these tools help your music, consider supporting the project. Your support
 helps me keep building new tools and improving them. Support is always optional.
-[Buy Me a Coffee](https://buymeacoffee.com/kalifrn)
+[Support Superpowers through Stripe](https://buy.stripe.com/9B64gA1b04jzaJbgyi1Jm00)
 
 Use beta software on backed-up projects. Nothing is uploaded automatically. To
 report a problem, open a GitHub issue with your operating system, exact Bitwig
