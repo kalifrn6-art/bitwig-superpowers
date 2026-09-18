@@ -9,20 +9,24 @@ and license.
 
 ## Downloads
 
-Replacement installer packages are being prepared. There are currently no public
-installer releases on this new download page. Older script-based packages were
-not copied here because they include implementation source.
+Compiled-runtime beta installer packages are available below. Older packages
+containing readable implementation source were not copied to this repository.
+These packages still use command launchers and require Python 3.11; they are not
+signed native EXE/PKG applications. Compiled code can be reverse-engineered.
 
-When available, download installers only from the [Releases](https://github.com/kalifrn6-art/bitwig-superpowers/releases)
+Download installers only from the [Releases](https://github.com/kalifrn6-art/bitwig-superpowers/releases)
 page. Do not use GitHub's automatically generated “Source code” archives; they
 contain only this public download-page README.
 
-### Previous beta compatibility (not currently available here)
+### Current beta compatibility
 
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
-| macOS Apple Silicon | 6.1.1 | Bitwig Superpowers Beta 1 |
-| Windows x64 | 6.1.1 | Bitwig Superpowers Windows Beta 1.1 |
+| macOS Apple Silicon | 6.1.1 | [Mac compiled Beta 1](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-macos-beta1-compiled) |
+| Windows x64 | 6.1.1 | [Windows compiled Beta 1.2](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-windows-beta1.2-compiled) |
+
+Mac 6.1.2 and unknown future versions are not supported by these downloads. Read
+the release-specific testing limitations before installing.
 
 These beta installers are version-specific. They deliberately stop on an unknown
 or modified Bitwig JAR instead of guessing. Support for a new Bitwig release is
