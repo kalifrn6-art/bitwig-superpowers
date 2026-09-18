@@ -9,9 +9,9 @@ and license.
 
 ## Downloads
 
-The macOS download is a native graphical installer in a DMG, with its own Python
-and FFmpeg/ffprobe. No command launcher or separate Python installation is needed.
-Windows currently uses a compiled-runtime command package; a native EXE is pending.
+Both downloads are native graphical installers. The macOS DMG and Windows EXE
+include their own Python and reviewed FFmpeg/ffprobe builds. No command launcher,
+separate Python installation, or separate FFmpeg installation is needed.
 Readable project implementation source is not distributed. Compiled code can
 still be reverse-engineered.
 
@@ -23,12 +23,11 @@ contain only this public download-page README.
 
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
-| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 | [Mac native installer Beta 1.0.1 — Audio Tools fix](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-macos-installer-beta1.0.1) |
-| Windows x64 | 6.1.1 | [Windows compiled Beta 1.2](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-windows-beta1.2-compiled) |
+| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 | [Beta 2 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-2/Bitwig-Superpowers-macOS-AppleSilicon-Beta-2.dmg) |
+| Windows 10/11 x64 | 6.1.1 | [Beta 2 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-2/Bitwig-Superpowers-Windows-x64-Beta-2.exe) |
 
 The Mac installer detects the installed version and selects a reviewed profile.
-Use Beta 1.0.1 or newer: the original native Beta 1 has an Audio Tools entry-point
-packaging bug. The corrected installer includes a public three-line launcher;
+Beta 2 includes the corrected Audio Tools entry point and bundled media tools;
 analysis and patching implementations remain compiled.
 Unknown future versions are not supported automatically. Read the release-specific
 testing limitations before installing. The Mac beta is ad-hoc signed, not
@@ -46,14 +45,16 @@ hosts. Keep the installer for access to its restore tools. The installer verifie
 the target and creates a verified backup
 before replacing anything.
 
-The Windows Audio Tools runtime requires official Python 3.11 x64, FFmpeg/ffprobe,
-and the Microsoft Visual C++ x64 runtime. Optional dependencies and models may
-require outbound HTTPS during setup. No inbound firewall rule is required.
+The optional Audio Tools setup downloads pinned Python packages and optional
+models over outbound HTTPS. If the Microsoft Visual C++ x64 runtime is missing,
+the Windows installer downloads Microsoft's signed installer and shows its normal
+license UI. No inbound firewall rule is required.
 
 ## Safety and support
 
 If these tools help your music, consider supporting the project. Your support
 helps me keep building new tools and improving them. Support is always optional.
+[Buy Me a Coffee](https://buymeacoffee.com/kalifrn)
 
 Use beta software on backed-up projects. Nothing is uploaded automatically. To
 report a problem, open a GitHub issue with your operating system, exact Bitwig
