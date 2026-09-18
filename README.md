@@ -9,11 +9,15 @@ and license.
 
 ## Downloads
 
-Download installers only from the [Releases](https://github.com/kalifrn6-art/bitwig-superpowers/releases)
+Replacement installer packages are being prepared. There are currently no public
+installer releases on this new download page. Older script-based packages were
+not copied here because they include implementation source.
+
+When available, download installers only from the [Releases](https://github.com/kalifrn6-art/bitwig-superpowers/releases)
 page. Do not use GitHub's automatically generated “Source code” archives; they
 contain only this public download-page README.
 
-### Current beta compatibility
+### Previous beta compatibility (not currently available here)
 
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
