@@ -40,6 +40,9 @@ or modified Bitwig JAR instead of guessing. Support for a new Bitwig release is
 published only after its detected profile and resulting patch have been reviewed
 and tested.
 
+During this beta cycle, releases focus on fixes. Each published correction moves
+to the next beta number so testers can identify the exact installer they used.
+
 ## Before installing
 
 Save your projects and fully quit Bitwig Studio, its audio engine, and plug-in
@@ -55,7 +58,7 @@ license UI. No inbound firewall rule is required.
 ## Safety and support
 
 If these tools help your music, consider supporting the project. Your support
-helps me keep building new tools and improving them. Support is always optional.
+helps me maintain and improve the beta. Support is always optional.
 [Support Superpowers through Stripe](https://buy.stripe.com/9B64gA1b04jzaJbgyi1Jm00)
 
 Use beta software on backed-up projects. Nothing is uploaded automatically. To
