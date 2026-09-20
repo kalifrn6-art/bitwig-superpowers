@@ -23,12 +23,14 @@ contain only this public download-page README.
 
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
-| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 | [Beta 2 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-2/Bitwig-Superpowers-macOS-AppleSilicon-Beta-2.dmg) |
+| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 | [Beta 3 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-3/Bitwig-Superpowers-macOS-AppleSilicon-Beta-3.dmg) |
 | Windows 10/11 x64 | 6.1.1 | [Beta 2 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-2/Superpowers-Windows-x64-Beta-2.exe) |
 
 The Mac installer detects the installed version and selects a reviewed profile.
-Beta 2 includes the corrected Audio Tools entry point and bundled media tools;
-analysis and patching implementations remain compiled.
+Beta 3 fixes the modified-JAR warning audio reported with Bitwig 6.1.2; if Beta
+2.1 is already installed, restore the official Bitwig app with that installer
+before installing Beta 3. Read the [Beta 3 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-3)
+for the update steps. Analysis and patching implementations remain compiled.
 Unknown future versions are not supported automatically. Read the release-specific
 testing limitations before installing. The Mac beta is ad-hoc signed, not
 Developer ID signed or notarized.
