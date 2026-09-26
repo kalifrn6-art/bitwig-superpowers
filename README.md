@@ -23,17 +23,25 @@ contain only this public download-page README.
 
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
-| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 | [Beta 3 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-3/Bitwig-Superpowers-macOS-AppleSilicon-Beta-3.dmg) |
-| Windows 10/11 x64 | 6.1.1 | [Beta 2 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-2/Superpowers-Windows-x64-Beta-2.exe) |
+| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 / **6.1.3** | [Beta 4 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4/Bitwig-Superpowers-macOS-AppleSilicon-Beta-4.dmg) |
+| Windows 10/11 x64 | 6.1.1 / **6.1.3** | [Beta 4 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4/Superpowers-Windows-x64-Beta-4.exe) |
 
-The Mac installer detects the installed version and selects a reviewed profile.
-Beta 3 fixes the modified-JAR warning audio reported with Bitwig 6.1.2; if Beta
-2.1 is already installed, restore the official Bitwig app with that installer
-before installing Beta 3. Read the [Beta 3 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-3)
-for the update steps. Analysis and patching implementations remain compiled.
-Unknown future versions are not supported automatically. Read the release-specific
-testing limitations before installing. The Mac beta is ad-hoc signed, not
-Developer ID signed or notarized.
+**New in Beta 4 (Bitwig 6.1.3):** right-click an audio clip in the Arranger for
+*Separate Stems* and *Audio to MIDI* (Melody, Harmony, Drums), *Capture MIDI*
+(retrieve what you just played, from the Play menu or the toolbar button) and
+*Track Freeze*. Audio Tools moved from the Inspector to the audio clip menu; MIDI
+Tools stay in the Inspector. Earlier Bitwig versions keep the tools of their
+previous beta. Read the [Beta 4 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-4).
+
+**If something fails, send the installer log.** Every operation is logged:
+
+- macOS: `~/Library/Logs/Bitwig Superpowers/` — the installer offers *Show Log in Finder* and *Copy Log*.
+- Windows: `%LOCALAPPDATA%\Bitwig Superpowers\Logs\` — the installer offers *Open installer log*.
+
+The installers detect the installed version and select a reviewed profile.
+Analysis and patching implementations remain compiled. Unknown future versions
+are not supported automatically. The Mac beta is ad-hoc signed, not Developer ID
+signed or notarized; the Windows installer is not code-signed.
 
 These beta installers are version-specific. They deliberately stop on an unknown
 or modified Bitwig JAR instead of guessing. Support for a new Bitwig release is
