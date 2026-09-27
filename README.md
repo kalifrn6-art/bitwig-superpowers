@@ -23,8 +23,10 @@ contain only this public download-page README.
 
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
-| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 / **6.1.3** | [Beta 4.1 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4-1/Bitwig-Superpowers-macOS-AppleSilicon-Beta-4.1.dmg) |
-| Windows 10/11 x64 | 6.1.1 / **6.1.3** | [Beta 4.2 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4-2/Superpowers-Windows-x64-Beta-4.2.exe) |
+| macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 / **6.1.3** | [Beta 4.3 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4-3/Bitwig-Superpowers-macOS-AppleSilicon-Beta-4.3.dmg) |
+| Windows 10/11 x64 | 6.1.1 / **6.1.3** | [Beta 4.3 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4-3/Superpowers-Windows-x64-Beta-4.3.exe) |
+
+**Beta 4.3** (macOS and Windows) fixes Capture MIDI on Bitwig 6.1.3: clips now land where you played them instead of at bar 1.1.1, and a capture never replaces an existing clip (it goes to a new track). Install it over Beta 4, 4.1 or 4.2. Read the [Beta 4.3 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-4-3).
 
 **Windows Beta 4.2** fixes the Audio Tools setup on Bitwig 6.1.3 (it stopped with `No module named 'install'` and nothing got installed) and adds the Capture MIDI icon. Read the [Beta 4.2 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-4-2).
 
