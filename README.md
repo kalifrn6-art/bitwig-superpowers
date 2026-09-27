@@ -24,7 +24,9 @@ contain only this public download-page README.
 | Platform | Supported Bitwig version | Package |
 |---|---:|---|
 | macOS 13+ Apple Silicon | 6.1.1 / 6.1.2 / **6.1.3** | [Beta 4.1 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4-1/Bitwig-Superpowers-macOS-AppleSilicon-Beta-4.1.dmg) |
-| Windows 10/11 x64 | 6.1.1 / **6.1.3** | [Beta 4.1 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4-1/Superpowers-Windows-x64-Beta-4.1.exe) |
+| Windows 10/11 x64 | 6.1.1 / **6.1.3** | [Beta 4.2 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-4-2/Superpowers-Windows-x64-Beta-4.2.exe) |
+
+**Windows Beta 4.2** fixes the Audio Tools setup on Bitwig 6.1.3 (it stopped with `No module named 'install'` and nothing got installed) and adds the Capture MIDI icon. Read the [Beta 4.2 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-4-2).
 
 **Beta 4.1** fixes Track Freeze occasionally leaving the audio engine paused; it updates a Beta 4 installation in place. Read the [Beta 4.1 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-4-1).
 
