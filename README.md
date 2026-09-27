@@ -37,6 +37,11 @@ contain only this public download-page README.
 Tools stay in the Inspector. Earlier Bitwig versions keep the tools of their
 previous beta. Read the [Beta 4 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-4).
 
+**Capture MIDI tip: if the captured clip looks empty, drag its left edge to the
+left.** The clip opens on only the last bars before you clicked Capture, but it
+already holds everything you played in the last five minutes, just before its
+start. Extending the left edge reveals the earlier notes.
+
 **If something fails, send the installer log.** Every operation is logged:
 
 - macOS: `~/Library/Logs/Bitwig Superpowers/` — the installer offers *Show Log in Finder* and *Copy Log*.
