@@ -29,10 +29,20 @@ contain only this public download-page README.
 |---|---|---|---|
 | macOS 13+ Apple Silicon | **6.1.3 / 6.1.4 / 6.1.5** | 6.1.1 / 6.1.2 keep Beta 4.3 tools | [Beta 5 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5/Bitwig-Superpowers-macOS-AppleSilicon-Beta-5.dmg) |
 | Windows 10/11 x64 | **6.1.3 / 6.1.5** | 6.1.1 keeps Beta 4.3 tools | [Beta 5 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5/Superpowers-Windows-x64-Beta-5.exe) |
-| Linux x64 (.deb install in `/opt/bitwig-studio`) | **6.1.5** | — | [Beta 5 tar.gz](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5/Superpowers-Linux-x64-Beta-5.tar.gz) |
+| Linux x64 (.deb, system or manually unpacked folder) | **6.1.5** | — | [Beta 5 / installer 5.0.1 tar.gz](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5/Superpowers-Linux-x64-Beta-5.0.1.tar.gz) |
 
 Install it over Beta 4, 4.1, 4.2 or 4.3; no need to restore first. Read the
 [Beta 5 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5).
+
+**Linux installer 5.0.1 hotfix (2026-10-17):** fixes `./install.sh --bitwig …`
+running status instead of install, and false running-app detection. Finds custom
+folders, including .deb files unpacked on Fedora. For a user-owned installation:
+`./install.sh --bitwig "$HOME/.applications/bitwig-native/opt/bitwig-studio"`.
+Theme-modified JARs require a verified official backup next to `bitwig.jar`; the
+modified JAR is preserved separately and the theme is not carried over. Without
+that backup, restore official Bitwig first. Reapplying themes is unverified and
+may overwrite Superpowers changes. Tested offline using real Linux 6.1.5 files;
+interactive Linux validation remains pending. [Installation guide](https://kalifrn.com/superpowers/changelog/#linux).
 
 **New in Beta 5**
 
