@@ -23,38 +23,41 @@ Download installers only from the [Releases](https://github.com/kalifrn6-art/bit
 page. Do not use GitHub's automatically generated "Source code" archives; they
 contain only this public download-page README.
 
-### Superpowers Beta 5
+### Superpowers Beta 5.0.2 (Bitwig 6.1.5)
 
-| Platform | Beta 5 tools on Bitwig | Older Bitwig | Package |
-|---|---|---|---|
-| macOS 13+ Apple Silicon | **6.1.3 / 6.1.4 / 6.1.5** | 6.1.1 / 6.1.2 keep Beta 4.3 tools | [Beta 5 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5/Bitwig-Superpowers-macOS-AppleSilicon-Beta-5.dmg) |
-| Windows 10/11 x64 | **6.1.3 / 6.1.5** | 6.1.1 keeps Beta 4.3 tools | [Beta 5 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5/Superpowers-Windows-x64-Beta-5.exe) |
-| Linux x64 (.deb, system or manually unpacked folder) | **6.1.5** | — | [Beta 5 / installer 5.0.1 tar.gz](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5/Superpowers-Linux-x64-Beta-5.0.1.tar.gz) |
+| Platform | Bitwig | Package |
+|---|---|---|
+| macOS 13+ Apple Silicon | **6.1.5** | [Beta 5.0.2 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5.0.2/Bitwig-Superpowers-macOS-AppleSilicon-Beta-5.0.2.dmg) |
+| Windows 10/11 x64 | **6.1.5** | [Beta 5.0.2 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5.0.2/Superpowers-Windows-x64-Beta-5.0.2.exe) |
+| Linux x64 (.deb, system or manually unpacked folder) | **6.1.5** | [Beta 5.0.2 tar.gz](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5.0.2/Superpowers-Linux-x64-Beta-5.0.2.tar.gz) |
 
-Install it over Beta 4, 4.1, 4.2 or 4.3; no need to restore first. Read the
-[Beta 5 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5).
+Install it over Beta 5 or 5.0.1; no need to restore first. Read the
+[Beta 5.0.2 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5.0.2).
+From now on new versions support **Bitwig 6.1.5 and later** only. On Bitwig 6.1.3 / 6.1.4 keep
+[Beta 5](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5)
+(it still has Cmd+3, see below); 6.1.1 / 6.1.2 keep Beta 4.3.
 
-**Linux installer 5.0.1 hotfix (2026-10-17):** fixes `./install.sh --bitwig …`
-running status instead of install, and false running-app detection. Finds custom
-folders, including .deb files unpacked on Fedora. For a user-owned installation:
-`./install.sh --bitwig "$HOME/.applications/bitwig-native/opt/bitwig-studio"`.
-Theme-modified JARs require a verified official backup next to `bitwig.jar`; the
-modified JAR is preserved separately and the theme is not carried over. Without
-that backup, restore official Bitwig first. Reapplying themes is unverified and
-may overwrite Superpowers changes. Tested offline using real Linux 6.1.5 files;
-interactive Linux validation remains pending. [Installation guide](https://kalifrn.com/superpowers/changelog/#linux).
+**Fixed in 5.0.2**
 
-**New in Beta 5**
+- **Projects that would not open** ("Unknown enum value with id 7 for enum quantize_grid_subdivision",
+  [#19](https://github.com/kalifrn6-art/bitwig-superpowers/issues/19)): projects saved with a 5T / 7T
+  grid failed to load. The cause was the Cmd+3 straight / triplet toggle, which is now **removed**;
+  the grid works exactly like stock Bitwig again. Your projects were never damaged.
+- **Shortcuts you can change:** Collapse / Expand Device and Collapse / Expand Track are now listed in
+  Settings > Shortcuts. Remap or remove their keys there; the defaults (`-`, `+` / `=`, Left, Right)
+  no longer override your choice.
+
+**New in Beta 5** (also in 5.0.2)
 
 - **Capture MIDI:** keeps the last 30 seconds you played; each capture uses up the buffer, so the next one never repeats notes.
 - **Freeze:** one progress window for the whole queue, no repeated missing-plug-in prompts, clips keep their shape with hatched tails, Unfreeze waits until plug-ins reload, 24-bit renders.
 - **Export with Group, Return and Master effects:** a new option in Export Audio.
 - **Ramp:** Start / End velocity under the Velocity lane of the piano roll.
-- **Piano roll:** selection follows moved notes, Cmd+E splits at the grid and keeps the pieces selected, Cmd+3 toggles straight / triplet, Duplicate copies the full length.
+- **Piano roll:** selection follows moved notes, Cmd+E splits at the grid and keeps the pieces selected, Duplicate copies the full length. (Beta 5 also had Cmd+3 straight / triplet, removed in 5.0.2.)
 - **Detect Event Key:** right-click an audio clip; its key is added to the clip name.
 - **Device Keys:** `-` collapses the selected device, `+` / `=` expands it.
 - **Groups:** lighter group summaries, a compact height toggle, Left / Right fold and unfold tracks, visible Shift ranges.
-- **Linux** support (Bitwig 6.1.5) and **Bitwig 6.1.4 / 6.1.5** support on macOS.
+- **Linux** support (Bitwig 6.1.5).
 
 **Something not working? Use Send Report.** Every installer has it (Linux:
 `python3 superpowers_linux.py report`). It saves a zip with your logs on the
