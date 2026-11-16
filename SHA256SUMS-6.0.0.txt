@@ -1,0 +1,3 @@
+594c11aa8e48adb6e9fe9ecadca704f90425a192764281e758326614b0b46db0  Bitwig-Superpowers-macOS-AppleSilicon-Beta-6.0.0.dmg
+2da1758988cd34e911cc01fa51463190e9dfd04a960a3d83b7ce2f5f30b054af  Superpowers-Windows-x64-Beta-6.0.0.exe
+a9971c3a61a237b3c6ff3d0e23bbcdec9834e80fb368aae5c28a431acacbc8b5  Superpowers-Linux-x64-Beta-6.0.0.tar.gz

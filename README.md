@@ -23,19 +23,24 @@ Download installers only from the [Releases](https://github.com/kalifrn6-art/bit
 page. Do not use GitHub's automatically generated "Source code" archives; they
 contain only this public download-page README.
 
-### Superpowers Beta 5.0.2 (Bitwig 6.1.5)
+### Superpowers Beta 6.0.0 (Bitwig 6.1.7)
 
 | Platform | Bitwig | Package |
 |---|---|---|
-| macOS 13+ Apple Silicon | **6.1.5** | [Beta 5.0.2 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5.0.2/Bitwig-Superpowers-macOS-AppleSilicon-Beta-5.0.2.dmg) |
-| Windows 10/11 x64 | **6.1.5** | [Beta 5.0.2 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5.0.2/Superpowers-Windows-x64-Beta-5.0.2.exe) |
-| Linux x64 (.deb, system or manually unpacked folder) | **6.1.5** | [Beta 5.0.2 tar.gz](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-5.0.2/Superpowers-Linux-x64-Beta-5.0.2.tar.gz) |
+| macOS 13+ Apple Silicon | **6.1.7** | [Beta 6.0.0 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Bitwig-Superpowers-macOS-AppleSilicon-Beta-6.0.0.dmg) |
+| Windows 10/11 x64 | **6.1.7** | [Beta 6.0.0 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Windows-x64-Beta-6.0.0.exe) |
+| Linux x64 (.deb or manually unpacked folder) | **6.1.7** | [Beta 6.0.0 GZ](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Linux-x64-Beta-6.0.0.tar.gz) |
 
-Install it over Beta 5 or 5.0.1; no need to restore first. Read the
-[Beta 5.0.2 release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5.0.2).
-From now on new versions support **Bitwig 6.1.5 and later** only. On Bitwig 6.1.3 / 6.1.4 keep
-[Beta 5](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5)
-(it still has Cmd+3, see below); 6.1.1 / 6.1.2 keep Beta 4.3.
+[Release notes](RELEASE-6.0.0.md) · [SHA-256 checksums](SHA256SUMS-6.0.0.txt) · [Feature tour](https://kalifrn.com/superpowers/)
+
+**New:** MIDI Comp, Glissando, Browser Rank/sort, Clean Waveforms and Settings → Mods.
+**Updated:** Freeze MIDI notes/snowflake/tails and queue handling, Capture MIDI overdub, and MIDI Tools visual helpers. All previous tools remain included; Cmd+3 remains removed.
+
+**Validation:** macOS Freeze/Capture confirmed by the user; all three packages passed offline checks and exact reconstruction. Windows started under CrossOver. **Windows and Linux interactive validation remains pending**; optional Audio Tools setup on Linux is also pending.
+
+Beta 6 supports **exactly Bitwig 6.1.7**. For Bitwig 6.1.5 keep [Beta 5.0.2](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5.0.2); for 6.1.3/6.1.4 keep [Beta 5](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5); for 6.1.1/6.1.2 keep Beta 4.3.
+
+### Previous releases
 
 **Fixed in 5.0.2**
 
