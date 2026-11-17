@@ -31,12 +31,22 @@ contain only this public download-page README.
 | Windows 10/11 x64 | **6.1.7** | [Beta 6.0.0 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Windows-x64-Beta-6.0.0.exe) |
 | Linux x64 (.deb or manually unpacked folder) | **6.1.7** | [Beta 6.0.0 GZ](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Linux-x64-Beta-6.0.0.tar.gz) |
 
+#### Superpowers for Patchbay (beta 6.0.0-dev.2)
+
+For unmodified Bitwig Studio **6.1.7** with Patchbay **0.36.0-dev.16** (21 Superpowers mods + 3 required frameworks; Clean Waveforms excluded). Extract the outer ZIP, leave the 24 ZIPs inside `mods/` compressed, and add all 24 via **Mods → Add Mod…** in Patchbay. Do not mix platform ZIP sets.
+
+| Platform | Bitwig / Patchbay | Bundle |
+|---|---|---|
+| macOS | **6.1.7** · `0.36.0-dev.16` | [Patchbay macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-macos.zip) |
+| Windows (experimental) | **6.1.7** · `0.36.0-dev.16` | [Patchbay Windows ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-windows.zip) |
+| Linux (experimental) | **6.1.7** · `0.36.0-dev.16` | [Patchbay Linux ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-linux.zip) |
+
 [Release notes](RELEASE-6.0.0.md) · [SHA-256 checksums](SHA256SUMS-6.0.0.txt) · [Feature tour](https://kalifrn.com/superpowers/)
 
 **New:** MIDI Comp, Glissando, Browser Rank/sort, Clean Waveforms and Settings → Mods.
 **Updated:** Freeze MIDI notes/snowflake/tails and queue handling, Capture MIDI overdub, and MIDI Tools visual helpers. All previous tools remain included; Cmd+3 remains removed.
 
-**Validation:** macOS Freeze/Capture confirmed by the user; all three packages passed offline checks and exact reconstruction. Windows started under CrossOver. **Windows and Linux interactive validation remains pending**; optional Audio Tools setup on Linux is also pending.
+**Validation:** macOS Freeze/Capture and Patchbay source selection confirmed by the user; all standalone and Patchbay packages passed offline checks. Windows standalone started under CrossOver. **Windows and Linux interactive validation (standalone and Patchbay) remains pending**; optional Audio Tools setup on Linux is also pending.
 
 Beta 6 supports **exactly Bitwig 6.1.7**. For Bitwig 6.1.5 keep [Beta 5.0.2](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5.0.2); for 6.1.3/6.1.4 keep [Beta 5](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5); for 6.1.1/6.1.2 keep Beta 4.3.
 
