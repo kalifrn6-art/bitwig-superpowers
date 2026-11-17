@@ -36,8 +36,97 @@ Platform bundles (`Superpowers-Patchbay-6.0.0-dev.2-{macos,windows,linux}.zip`) 
 
 The macOS source selection was tested by the author; symbol-map cleanup and the experimental Windows and Linux bundles passed offline preparation, reflection/direct-reference verification, and real Patchbay launcher import/update/digest-rejection checks. **Windows and Linux Patchbay bundles are experimental and have not been tested interactively on those operating systems.**
 
+### Patchbay Launcher catalog
+
+All 24 inner ZIPs per platform are also published as individual release assets: 21 Superpowers mods and the 3 required frameworks (72 ZIPs total). Add a **Mods** source for repository `kalifrn6-art/bitwig-superpowers` and use the filter for your operating system:
+
+| Platform | Source filter |
+|---|---|
+| macOS | `*.macos.zip` |
+| Windows (experimental) | `*.windows.zip` |
+| Linux (experimental) | `*.linux.zip` |
+
+Assets use `<mod-id>-<version>.<platform>.zip`, for example `superpowers-freeze-6.0.0-dev.2.macos.zip`. The stable preferences framework uses `preferences-composition-framework-1.0.0-platform.macos.zip` (or `.windows.zip` / `.linux.zip`) so the Launcher accepts the filename. ZIP contents and manifest versions are unchanged from the bundles. Include all three frameworks: **Actions and Menus**, **Inspector**, and **Preferences**; these existing packages do not declare all framework dependencies in the Launcher's `requires` field, so select the frameworks explicitly. Use only one platform filter. The original bundles remain available for manual import.
+
 For Bitwig 6.1.5, keep Beta 5.0.2; for 6.1.3/6.1.4, keep Beta 5. These installers are not an automatic compatibility promise for later Bitwig versions.
 
 [Feature tour and downloads](https://kalifrn.com/superpowers/) · [Support Superpowers](https://buy.stripe.com/9B64gA1b04jzaJbgyi1Jm00)
 
 SHA-256 checksums are attached in SHA256SUMS-6.0.0.txt.
+
+### Individual Patchbay mod assets
+
+| Mod | Release asset | Platform |
+|---|---|---|
+| Framework: Actions and Menus | `action-menu-composition-framework-0.8.0-dev.1.macos.zip` | macos |
+| Framework: Inspector | `inspector-composition-framework-0.3.0-dev.2.macos.zip` | macos |
+| Framework: Settings | `preferences-composition-framework-1.0.0-platform.macos.zip` | macos |
+| Arranger: Superpowers Nudge Overlap Recovery | `superpowers-arranger-nudge-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Audio Tools | `superpowers-audio-tools-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Browser Rank | `superpowers-browser-rank-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Browser Sort Memory and Folders | `superpowers-browser-sort-6.0.0-dev.2.macos.zip` | macos |
+| Capture MIDI: Superpowers | `superpowers-capture-midi-6.0.0-dev.2.macos.zip` | macos |
+| Arranger: Superpowers Comp Fades | `superpowers-comp-fades-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Continuous Takes | `superpowers-continuous-take-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Device Shortcuts | `superpowers-device-keys-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Export with FX | `superpowers-export-fx-6.0.0-dev.2.macos.zip` | macos |
+| Arranger: Superpowers Freeze | `superpowers-freeze-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Group Color | `superpowers-group-color-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Compact Group Height | `superpowers-group-height-6.0.0-dev.2.macos.zip` | macos |
+| Arranger: Superpowers Group Summary Opacity | `superpowers-group-summary-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: MIDI Comping | `superpowers-midi-comp-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: MIDI Tools | `superpowers-midi-tools-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Piano Roll Keys | `superpowers-piano-roll-keys-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Plug-in Load Timeout | `superpowers-plugin-load-timeout-6.0.0-dev.2.macos.zip` | macos |
+| Piano Roll: Superpowers Velocity Ramp | `superpowers-ramp-velocity-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Selection Follows Notes | `superpowers-selection-follows-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Track Shortcuts | `superpowers-track-keys-6.0.0-dev.2.macos.zip` | macos |
+| Superpowers: Track Range Across Groups | `superpowers-track-range-6.0.0-dev.2.macos.zip` | macos |
+| Framework: Actions and Menus | `action-menu-composition-framework-0.8.0-dev.1.windows.zip` | windows |
+| Framework: Inspector | `inspector-composition-framework-0.3.0-dev.2.windows.zip` | windows |
+| Framework: Settings | `preferences-composition-framework-1.0.0-platform.windows.zip` | windows |
+| Arranger: Superpowers Nudge Overlap Recovery | `superpowers-arranger-nudge-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Audio Tools | `superpowers-audio-tools-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Browser Rank | `superpowers-browser-rank-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Browser Sort Memory and Folders | `superpowers-browser-sort-6.0.0-dev.2.windows.zip` | windows |
+| Capture MIDI: Superpowers | `superpowers-capture-midi-6.0.0-dev.2.windows.zip` | windows |
+| Arranger: Superpowers Comp Fades | `superpowers-comp-fades-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Continuous Takes | `superpowers-continuous-take-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Device Shortcuts | `superpowers-device-keys-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Export with FX | `superpowers-export-fx-6.0.0-dev.2.windows.zip` | windows |
+| Arranger: Superpowers Freeze | `superpowers-freeze-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Group Color | `superpowers-group-color-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Compact Group Height | `superpowers-group-height-6.0.0-dev.2.windows.zip` | windows |
+| Arranger: Superpowers Group Summary Opacity | `superpowers-group-summary-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: MIDI Comping | `superpowers-midi-comp-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: MIDI Tools | `superpowers-midi-tools-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Piano Roll Keys | `superpowers-piano-roll-keys-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Plug-in Load Timeout | `superpowers-plugin-load-timeout-6.0.0-dev.2.windows.zip` | windows |
+| Piano Roll: Superpowers Velocity Ramp | `superpowers-ramp-velocity-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Selection Follows Notes | `superpowers-selection-follows-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Track Shortcuts | `superpowers-track-keys-6.0.0-dev.2.windows.zip` | windows |
+| Superpowers: Track Range Across Groups | `superpowers-track-range-6.0.0-dev.2.windows.zip` | windows |
+| Framework: Actions and Menus | `action-menu-composition-framework-0.8.0-dev.1.linux.zip` | linux |
+| Framework: Inspector | `inspector-composition-framework-0.3.0-dev.2.linux.zip` | linux |
+| Framework: Settings | `preferences-composition-framework-1.0.0-platform.linux.zip` | linux |
+| Arranger: Superpowers Nudge Overlap Recovery | `superpowers-arranger-nudge-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Audio Tools | `superpowers-audio-tools-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Browser Rank | `superpowers-browser-rank-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Browser Sort Memory and Folders | `superpowers-browser-sort-6.0.0-dev.2.linux.zip` | linux |
+| Capture MIDI: Superpowers | `superpowers-capture-midi-6.0.0-dev.2.linux.zip` | linux |
+| Arranger: Superpowers Comp Fades | `superpowers-comp-fades-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Continuous Takes | `superpowers-continuous-take-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Device Shortcuts | `superpowers-device-keys-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Export with FX | `superpowers-export-fx-6.0.0-dev.2.linux.zip` | linux |
+| Arranger: Superpowers Freeze | `superpowers-freeze-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Group Color | `superpowers-group-color-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Compact Group Height | `superpowers-group-height-6.0.0-dev.2.linux.zip` | linux |
+| Arranger: Superpowers Group Summary Opacity | `superpowers-group-summary-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: MIDI Comping | `superpowers-midi-comp-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: MIDI Tools | `superpowers-midi-tools-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Piano Roll Keys | `superpowers-piano-roll-keys-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Plug-in Load Timeout | `superpowers-plugin-load-timeout-6.0.0-dev.2.linux.zip` | linux |
+| Piano Roll: Superpowers Velocity Ramp | `superpowers-ramp-velocity-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Selection Follows Notes | `superpowers-selection-follows-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Track Shortcuts | `superpowers-track-keys-6.0.0-dev.2.linux.zip` | linux |
+| Superpowers: Track Range Across Groups | `superpowers-track-range-6.0.0-dev.2.linux.zip` | linux |

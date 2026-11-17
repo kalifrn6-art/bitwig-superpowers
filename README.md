@@ -41,6 +41,18 @@ For unmodified Bitwig Studio **6.1.7** with Patchbay **0.36.0-dev.16** (21 Super
 | Windows (experimental) | **6.1.7** · `0.36.0-dev.16` | [Patchbay Windows ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-windows.zip) |
 | Linux (experimental) | **6.1.7** · `0.36.0-dev.16` | [Patchbay Linux ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-linux.zip) |
 
+### Patchbay Launcher catalog
+
+All 24 inner ZIPs per platform are also published as individual release assets: 21 Superpowers mods and the 3 required frameworks (72 ZIPs total). Add a **Mods** source for repository `kalifrn6-art/bitwig-superpowers` and use the filter for your operating system:
+
+| Platform | Source filter |
+|---|---|
+| macOS | `*.macos.zip` |
+| Windows (experimental) | `*.windows.zip` |
+| Linux (experimental) | `*.linux.zip` |
+
+Assets use `<mod-id>-<version>.<platform>.zip`, for example `superpowers-freeze-6.0.0-dev.2.macos.zip`. The stable preferences framework uses `preferences-composition-framework-1.0.0-platform.macos.zip` (or `.windows.zip` / `.linux.zip`) so the Launcher accepts the filename. ZIP contents and manifest versions are unchanged from the bundles. Include all three frameworks: **Actions and Menus**, **Inspector**, and **Preferences**; these existing packages do not declare all framework dependencies in the Launcher's `requires` field, so select the frameworks explicitly. Use only one platform filter. The original bundles remain available for manual import.
+
 [Release notes](RELEASE-6.0.0.md) · [SHA-256 checksums](SHA256SUMS-6.0.0.txt) · [Feature tour](https://kalifrn.com/superpowers/)
 
 **New:** MIDI Comp, Glissando, Browser Rank/sort, Clean Waveforms and Settings → Mods.
