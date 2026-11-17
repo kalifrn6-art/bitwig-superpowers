@@ -40,4 +40,4 @@ For Bitwig 6.1.5, keep Beta 5.0.2; for 6.1.3/6.1.4, keep Beta 5. These installer
 
 [Feature tour and downloads](https://kalifrn.com/superpowers/) · [Support Superpowers](https://buy.stripe.com/9B64gA1b04jzaJbgyi1Jm00)
 
-SHA-256 checksums are attached in SHA256SUMS-6.0.0.txt. Showcase videos are animated UI recreations, not screen recordings.
+SHA-256 checksums are attached in SHA256SUMS-6.0.0.txt.
