@@ -14,36 +14,59 @@ Website and feature tour: [kalifrn.com/superpowers](https://kalifrn.com/superpow
 
 ## Downloads
 
-macOS and Windows are native graphical installers with their own Python and
-reviewed FFmpeg/ffprobe builds; no separate Python or FFmpeg is needed. Linux is a
-small command-line installer. Readable project implementation source is not
-distributed. Compiled code can still be reverse-engineered.
+Superpowers is now distributed **only as Patchbay mods**: no more installers, and
+Bitwig Studio itself stays unmodified. Install Patchbay
+0.36.0-dev.16, point it at your Bitwig installation and add the mods. Readable project
+implementation source is not distributed. Compiled code can still be reverse-engineered.
 
-Download installers only from the [Releases](https://github.com/kalifrn6-art/bitwig-superpowers/releases)
+Download only from the [Releases](https://github.com/kalifrn6-art/bitwig-superpowers/releases)
 page. Do not use GitHub's automatically generated "Source code" archives; they
 contain only this public download-page README.
 
-### Superpowers Beta 6.0.0 (Bitwig 6.1.7)
+### Superpowers for Patchbay 6.0.1-dev.1 (Bitwig 6.1.7 to 6.1.10)
 
-| Platform | Bitwig | Package |
-|---|---|---|
-| macOS 13+ Apple Silicon | **6.1.7** | [Beta 6.0.0 DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Bitwig-Superpowers-macOS-AppleSilicon-Beta-6.0.0.dmg) |
-| Windows 10/11 x64 | **6.1.7** | [Beta 6.0.0 EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Windows-x64-Beta-6.0.0.exe) |
-| Linux x64 (.deb or manually unpacked folder) | **6.1.7** | [Beta 6.0.0 GZ](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Linux-x64-Beta-6.0.0.tar.gz) |
+| Platform | Bitwig | Bundle | Status |
+|---|---|---|---|
+| macOS (Apple Silicon) | **6.1.7** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) | Tested by the author |
+| macOS (Apple Silicon) | **6.1.8, 6.1.9, 6.1.10** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) + map pack below | Tested by the author on 6.1.10; offline checks on 6.1.9 |
+| Windows x64 | **6.1.7** only | [Windows ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-windows.zip) | **Experimental:** offline checks only |
+| Linux x64 | **6.1.7** only | [Linux ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-linux.zip) | **Experimental:** offline checks only |
 
-#### Superpowers for Patchbay (beta 6.0.0-dev.2)
+**Map packs (macOS 6.1.8 and later only).** Download the one for your Bitwig version and
+import it with **Import Map…** in Patchbay, leaving the ZIP compressed:
+[6.1.8](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/macos-6.1.8-map1-v2.0.0-bupp.1.zip) ·
+[6.1.9](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/macos-6.1.9-map1-v2.0.0-bupp.1.zip) ·
+[6.1.10](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/macos-6.1.10-map1-v2.0.0-bupp.1.zip)
 
-For unmodified Bitwig Studio **6.1.7** with Patchbay **0.36.0-dev.16** (21 Superpowers mods + 3 required frameworks; Clean Waveforms excluded). Extract the outer ZIP, leave the 24 ZIPs inside `mods/` compressed, and add all 24 via **Mods → Add Mod…** in Patchbay. Do not mix platform ZIP sets.
+**Install**
 
-| Platform | Bitwig / Patchbay | Bundle |
-|---|---|---|
-| macOS | **6.1.7** · `0.36.0-dev.16` | [Patchbay macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-macos.zip) |
-| Windows (experimental) | **6.1.7** · `0.36.0-dev.16` | [Patchbay Windows ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-windows.zip) |
-| Linux (experimental) | **6.1.7** · `0.36.0-dev.16` | [Patchbay Linux ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Patchbay-6.0.0-dev.2-linux.zip) |
+1. Download the ZIP for your OS and extract it. Leave the 24 ZIPs inside `mods/` compressed.
+2. macOS 6.1.8–6.1.10 only: import the matching map pack with **Import Map…**.
+3. In Patchbay, choose your unmodified Bitwig installation in Settings, then use
+   **Mods → Add Mod…** to add all 24 ZIPs for your OS. Do not mix platform sets.
+4. Enable the mods you want and click **Load**.
+
+Updating from 6.0.0-dev.2: add the new ZIPs over the old ones; Patchbay replaces mods with the same id.
+
+Included: 21 Superpowers mods and the 3 required frameworks (Actions and Menus, Inspector,
+Preferences). **Clean Waveforms is not included.** Audio Tools still needs its external runtime.
+
+**New in 6.0.1-dev.1**
+
+- **macOS: Bitwig 6.1.8, 6.1.9 and 6.1.10** through map packs.
+- **Same placement as the Superpowers installer:** Freeze rows back at the top of the track menu,
+  Assign Group Color right under the colours, and the read-only **Chord** row under Key in the Note Inspector.
+- **Fixed:** Capture MIDI with the loop on kept only the last 2 or 3 chords; Cmd+G crashed on 6.1.10
+  with Group Summary enabled; MIDI Tools, Freeze rows and the Capture toolbar button were missing on 6.1.8 and later.
+
+Offline checks don't cover every project, plug-in or workflow. Save and back up your projects before trying a new version.
+
+[Release notes](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-patchbay-6.0.1-dev.1) · [SHA-256 checksums](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/SHA256SUMS-6.0.1-dev.1.txt) · [Feature tour](https://kalifrn.com/superpowers/)
 
 ### Patchbay Launcher catalog
 
-All 24 inner ZIPs per platform are also published as individual release assets: 21 Superpowers mods and the 3 required frameworks (72 ZIPs total). Add a **Mods** source for repository `kalifrn6-art/bitwig-superpowers` and use the filter for your operating system:
+All 24 inner ZIPs per platform are also published as individual release assets. Add a
+**Mods** source for repository `kalifrn6-art/bitwig-superpowers` and use the filter for your OS:
 
 | Platform | Source filter |
 |---|---|
@@ -51,18 +74,18 @@ All 24 inner ZIPs per platform are also published as individual release assets: 
 | Windows (experimental) | `*.windows.zip` |
 | Linux (experimental) | `*.linux.zip` |
 
-Assets use `<mod-id>-<version>.<platform>.zip`, for example `superpowers-freeze-6.0.0-dev.2.macos.zip`. The stable preferences framework uses `preferences-composition-framework-1.0.0-platform.macos.zip` (or `.windows.zip` / `.linux.zip`) so the Launcher accepts the filename. ZIP contents and manifest versions are unchanged from the bundles. Include all three frameworks: **Actions and Menus**, **Inspector**, and **Preferences**; these existing packages do not declare all framework dependencies in the Launcher's `requires` field, so select the frameworks explicitly. Use only one platform filter. The original bundles remain available for manual import.
-
-[Release notes](RELEASE-6.0.0.md) · [SHA-256 checksums](SHA256SUMS-6.0.0.txt) · [Feature tour](https://kalifrn.com/superpowers/)
-
-**New:** MIDI Comp, Glissando, Browser Rank/sort, Clean Waveforms and Settings → Mods.
-**Updated:** Freeze MIDI notes/snowflake/tails and queue handling, Capture MIDI overdub, and MIDI Tools visual helpers. All previous tools remain included; Cmd+3 remains removed.
-
-**Validation:** macOS Freeze/Capture and Patchbay source selection confirmed by the user; all standalone and Patchbay packages passed offline checks. Windows standalone started under CrossOver. **Windows and Linux interactive validation (standalone and Patchbay) remains pending**; optional Audio Tools setup on Linux is also pending.
-
-Beta 6 supports **exactly Bitwig 6.1.7**. For Bitwig 6.1.5 keep [Beta 5.0.2](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5.0.2); for 6.1.3/6.1.4 keep [Beta 5](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5); for 6.1.1/6.1.2 keep Beta 4.3.
+Assets use `<mod-id>-6.0.1-dev.1.<platform>.zip`. The Preferences framework is
+`preferences-composition-framework-1.0.0-platform.<platform>.zip`. Select all three frameworks
+(**Actions and Menus**, **Inspector**, **Preferences**) explicitly, and use only one platform filter.
 
 ### Previous releases
+
+**Beta 6.0.0 standalone installers (exactly Bitwig 6.1.7)** — the last installer-based release:
+[macOS DMG](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Bitwig-Superpowers-macOS-AppleSilicon-Beta-6.0.0.dmg) ·
+[Windows EXE](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Windows-x64-Beta-6.0.0.exe) ·
+[Linux GZ](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-beta-6.0.0/Superpowers-Linux-x64-Beta-6.0.0.tar.gz) ·
+[Release notes](RELEASE-6.0.0.md). For Bitwig 6.1.5 keep [Beta 5.0.2](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5.0.2);
+for 6.1.3/6.1.4 keep [Beta 5](https://github.com/kalifrn6-art/bitwig-superpowers/releases/tag/superpowers-beta-5); for 6.1.1/6.1.2 keep Beta 4.3.
 
 **Fixed in 5.0.2**
 
