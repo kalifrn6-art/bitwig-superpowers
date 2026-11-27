@@ -57,9 +57,13 @@ Menus, Inspector, Preferences). Audio Tools still needs its external runtime.
 - **Bitwig 6.1.8–6.1.10 on macOS, and 6.1.7, 6.1.9, 6.1.10 on Windows and Linux** through the included map packs.
 - **Same placement as the Superpowers installer:** Freeze rows back at the top of the track menu,
   Assign Group Color right under the colours, and the read-only **Chord** row under Key in the Note Inspector.
-- **Fixed:** Freeze on Bitwig 6.1.10 no longer freezes the UI or spikes GC after freezing a track; Capture MIDI
-  with the loop on kept only the last 2 or 3 chords; Cmd+G crashed on 6.1.10 with Group Summary enabled; MIDI
-  Tools, Freeze rows and the Capture toolbar button were missing on 6.1.8 and later (including Windows and Linux 6.1.9–6.1.10).
+- **Fixed:**
+  - **Performance & UI responsiveness:** eliminates multi-second UI freezes when opening the default project, placing MIDI notes / opening the Note Inspector, and applying Glissando (lazy binary-indexed symbol tables + O(1) cached reflection, plus stripping unused tables for ~80–90 MB smaller downloads).
+  - **Audio to MIDI timing:** bounced clips (which include Bitwig's silent bounce tail in the WAV file), trimmed/cropped clips, warped/stretched clips, looped clips and reversed clips now map extracted notes through Bitwig's native clip/event timing instead of compressing notes across the full WAV file duration.
+  - **Freeze on Bitwig 6.1.10:** no longer freezes the UI or spikes GC after freezing a track.
+  - **Capture MIDI with the loop on:** notes are placed from the playhead position at the click, folded into the loop, instead of keeping only the last 2 or 3 chords.
+  - **Cmd+G on 6.1.10:** no longer crashes with Group Summary enabled.
+  - **Bitwig 6.1.8 and later:** MIDI Tools, Freeze rows and the Capture toolbar button are shown again (including Windows and Linux 6.1.9–6.1.10).
 
 Offline checks don't cover every project, plug-in or workflow. Save and back up your projects before trying a new version.
 
