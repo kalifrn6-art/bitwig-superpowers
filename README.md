@@ -28,25 +28,23 @@ contain only this public download-page README.
 | Platform | Bitwig | Bundle | Status |
 |---|---|---|---|
 | macOS (Apple Silicon) | **6.1.7** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) | Tested by the author |
-| macOS (Apple Silicon) | **6.1.8, 6.1.9, 6.1.10** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) (map packs included) | Tested by the author on 6.1.10; offline checks on 6.1.9 |
-| Windows x64 | **6.1.7** only | [Windows ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-windows.zip) | **Experimental:** offline checks only |
-| Linux x64 | **6.1.7** only | [Linux ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-linux.zip) | **Experimental:** offline checks only |
+| macOS (Apple Silicon) | **6.1.8, 6.1.9, 6.1.10** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) (map packs included) | Tested by the author on 6.1.10; offline checks on 6.1.9 and 6.1.10 |
+| Windows x64 | **6.1.7, 6.1.9, 6.1.10** | [Windows ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-windows.zip) (map packs included) | **Experimental:** offline checks only |
+| Linux x64 | **6.1.7, 6.1.9, 6.1.10** | [Linux ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-linux.zip) (map packs included) | **Experimental:** offline checks only |
 
-The macOS ZIP includes everything in one download: the mods in `mods/` and the map packs for
-6.1.8, 6.1.9 and 6.1.10 in `maps/`.
+Each platform ZIP includes everything in one download: the mods in `mods/` and the map packs in `maps/`
+(macOS: 6.1.8, 6.1.9 and 6.1.10; Windows and Linux: 6.1.9 and 6.1.10).
 
 **Install**
 
 1. Download the ZIP for your OS and extract it. Leave the 25 ZIPs inside `mods/` compressed.
-2. macOS 6.1.8–6.1.10 only: in Patchbay, use **Import Map…** with the ZIP in `maps/` for your
-   Bitwig version, leaving it compressed.
+2. On Bitwig 6.1.8–6.1.10 (macOS) or 6.1.9 / 6.1.10 (Windows and Linux): in Patchbay, use **Import Map…**
+   with the ZIP in `maps/` for your Bitwig version, leaving it compressed. Not needed on 6.1.7.
 3. In Patchbay, choose your unmodified Bitwig installation in Settings, then use
    **Mods → Add Mod…** to add all 25 ZIPs for your OS. Do not mix platform sets.
 4. Enable the mods you want and click **Load**.
 
-Updating from 6.0.0-dev.2: add the new ZIPs over the old ones; Patchbay replaces mods with the same id.
-Already have 6.0.1-dev.1 from before Clean Waveforms was added? Just add
-`superpowers-clean-waveforms-6.0.1-dev.1.<your OS>.zip` from the release.
+Updating from 6.0.0-dev.2 or an earlier 6.0.1-dev.1 build: add the new ZIPs over the old ones; Patchbay replaces mods with the same id.
 
 Included: 22 Superpowers mods, now with **Clean Waveforms**, and the 3 required frameworks (Actions and
 Menus, Inspector, Preferences). Audio Tools still needs its external runtime.
@@ -55,12 +53,13 @@ Menus, Inspector, Preferences). Audio Tools still needs its external runtime.
 
 - **Clean Waveforms is back, in our own version (5.3):** filled, rounded waveforms drawn from Bitwig's own
   peaks, with no lag and no trail under the cursor or playhead.
-- **One download:** the macOS ZIP now carries the map packs.
-- **macOS: Bitwig 6.1.8, 6.1.9 and 6.1.10** through the included map packs.
+- **One download on every OS:** each platform ZIP carries its map packs in `maps/`.
+- **Bitwig 6.1.8–6.1.10 on macOS, and 6.1.7, 6.1.9, 6.1.10 on Windows and Linux** through the included map packs.
 - **Same placement as the Superpowers installer:** Freeze rows back at the top of the track menu,
   Assign Group Color right under the colours, and the read-only **Chord** row under Key in the Note Inspector.
-- **Fixed:** Capture MIDI with the loop on kept only the last 2 or 3 chords; Cmd+G crashed on 6.1.10
-  with Group Summary enabled; MIDI Tools, Freeze rows and the Capture toolbar button were missing on 6.1.8 and later.
+- **Fixed:** Freeze on Bitwig 6.1.10 no longer freezes the UI or spikes GC after freezing a track; Capture MIDI
+  with the loop on kept only the last 2 or 3 chords; Cmd+G crashed on 6.1.10 with Group Summary enabled; MIDI
+  Tools, Freeze rows and the Capture toolbar button were missing on 6.1.8 and later (including Windows and Linux 6.1.9–6.1.10).
 
 Offline checks don't cover every project, plug-in or workflow. Save and back up your projects before trying a new version.
 
