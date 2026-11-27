@@ -28,32 +28,35 @@ contain only this public download-page README.
 | Platform | Bitwig | Bundle | Status |
 |---|---|---|---|
 | macOS (Apple Silicon) | **6.1.7** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) | Tested by the author |
-| macOS (Apple Silicon) | **6.1.8, 6.1.9, 6.1.10** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) + map pack below | Tested by the author on 6.1.10; offline checks on 6.1.9 |
+| macOS (Apple Silicon) | **6.1.8, 6.1.9, 6.1.10** | [macOS ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-macos.zip) (map packs included) | Tested by the author on 6.1.10; offline checks on 6.1.9 |
 | Windows x64 | **6.1.7** only | [Windows ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-windows.zip) | **Experimental:** offline checks only |
 | Linux x64 | **6.1.7** only | [Linux ZIP](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/Superpowers-Patchbay-6.0.1-dev.1-linux.zip) | **Experimental:** offline checks only |
 
-**Map packs (macOS 6.1.8 and later only).** Download the one for your Bitwig version and
-import it with **Import Map…** in Patchbay, leaving the ZIP compressed:
-[6.1.8](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/macos-6.1.8-map1-v2.0.0-bupp.1.zip) ·
-[6.1.9](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/macos-6.1.9-map1-v2.0.0-bupp.1.zip) ·
-[6.1.10](https://github.com/kalifrn6-art/bitwig-superpowers/releases/download/superpowers-patchbay-6.0.1-dev.1/macos-6.1.10-map1-v2.0.0-bupp.1.zip)
+The macOS ZIP includes everything in one download: the mods in `mods/` and the map packs for
+6.1.8, 6.1.9 and 6.1.10 in `maps/`.
 
 **Install**
 
-1. Download the ZIP for your OS and extract it. Leave the 24 ZIPs inside `mods/` compressed.
-2. macOS 6.1.8–6.1.10 only: import the matching map pack with **Import Map…**.
+1. Download the ZIP for your OS and extract it. Leave the 25 ZIPs inside `mods/` compressed.
+2. macOS 6.1.8–6.1.10 only: in Patchbay, use **Import Map…** with the ZIP in `maps/` for your
+   Bitwig version, leaving it compressed.
 3. In Patchbay, choose your unmodified Bitwig installation in Settings, then use
-   **Mods → Add Mod…** to add all 24 ZIPs for your OS. Do not mix platform sets.
+   **Mods → Add Mod…** to add all 25 ZIPs for your OS. Do not mix platform sets.
 4. Enable the mods you want and click **Load**.
 
 Updating from 6.0.0-dev.2: add the new ZIPs over the old ones; Patchbay replaces mods with the same id.
+Already have 6.0.1-dev.1 from before Clean Waveforms was added? Just add
+`superpowers-clean-waveforms-6.0.1-dev.1.<your OS>.zip` from the release.
 
-Included: 21 Superpowers mods and the 3 required frameworks (Actions and Menus, Inspector,
-Preferences). **Clean Waveforms is not included.** Audio Tools still needs its external runtime.
+Included: 22 Superpowers mods, now with **Clean Waveforms**, and the 3 required frameworks (Actions and
+Menus, Inspector, Preferences). Audio Tools still needs its external runtime.
 
 **New in 6.0.1-dev.1**
 
-- **macOS: Bitwig 6.1.8, 6.1.9 and 6.1.10** through map packs.
+- **Clean Waveforms is back, in our own version (5.3):** filled, rounded waveforms drawn from Bitwig's own
+  peaks, with no lag and no trail under the cursor or playhead.
+- **One download:** the macOS ZIP now carries the map packs.
+- **macOS: Bitwig 6.1.8, 6.1.9 and 6.1.10** through the included map packs.
 - **Same placement as the Superpowers installer:** Freeze rows back at the top of the track menu,
   Assign Group Color right under the colours, and the read-only **Chord** row under Key in the Note Inspector.
 - **Fixed:** Capture MIDI with the loop on kept only the last 2 or 3 chords; Cmd+G crashed on 6.1.10
@@ -65,7 +68,7 @@ Offline checks don't cover every project, plug-in or workflow. Save and back up 
 
 ### Patchbay Launcher catalog
 
-All 24 inner ZIPs per platform are also published as individual release assets. Add a
+All 25 inner ZIPs per platform are also published as individual release assets. Add a
 **Mods** source for repository `kalifrn6-art/bitwig-superpowers` and use the filter for your OS:
 
 | Platform | Source filter |
